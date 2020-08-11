@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.19/lodash.min.js" integrity="sha512-/A6lxqQJVUIMnx8B/bx/ERfeuJnqoWPJdUxN8aBj+tZYL35O998ry7UUGoN65PSUNlJNrqKZrDENi4i1c3zy4Q==" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="section has-background-info">
+        <div class="container is-fluid">
+            <div class="columns is-centered">
+                <div class="columm is-half">
+                    <h1 class="title has-text-white">Currency Calculator</h1>
+                    <div class="field has-addons">
+                        <p class="control">
+                            <span class="select is-medium">
+                                <select name="currency"></select>
+                            </span>
+                        </p>
+                        <p class="control">
+                            <input name="currency" type="text" class="input is-medium" placeholder="Enter a value">
+                        </p>
+                    </div>
+
+                    <div class="field has-addons">
+                        <p class="control">
+                            <span class="select is-medium">
+                                <select name="calculated-currency"></select>
+                            </span>
+                        </p>
+                        <p class="control">
+                            <input id="res" type="text" class="input is-medium" readonly>
+                        </p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section name="second-part" class="section has-background-light is-hidden">
+        <div class="container is-fluid">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="content">
+                        <h2 class="title">All currencies:</h2>
+                        <ul id="all-currencies" class="is-large"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

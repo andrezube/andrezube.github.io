@@ -19,7 +19,10 @@ callForCurrencies().then(res => {
         option.value = currency;
         selectCurrency.add(option);
         calcCurrency.add(option.cloneNode(true));
-    }  
+    }
+
+    selectCurrency.value = "EUR";
+    calcCurrency.value = "USD"
 })
 
 async function callForCurrencies() {
